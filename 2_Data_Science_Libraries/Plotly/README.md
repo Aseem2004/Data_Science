@@ -1,1 +1,2 @@
-
+Plotly relies on JavaScript for interactive visualizations, which GitHub doesn’t support for security reasons. GitHub only renders static images, text, and Markdown content, while interactive library like Plotly create HTML files with embedded JavaScript to allow interactivity, which won’t execute on GitHub.<br>
+To view the output, just click on Google colab link attached in the Plotly.ipynb file to see the code along with its output. 
