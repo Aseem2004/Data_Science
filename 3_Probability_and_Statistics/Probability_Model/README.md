@@ -18,5 +18,12 @@
   </ul>
   </li><br>
 
-  <li><b>Probability Model continuous:</b> Till now, we only talked about discrete probability model where probability of every outcome can be calculated. Like, upon rolling a die, we can calculate probabilities of getting each of 1,2,3,4,5 and 6.<br>But a continuous probability model describes scenarios where outcomes are not discrete but can take any value within a range. <b>In such models, probabilities are calculated over intervals instead of specific values, as there are infinitely many possible outcomes.</b></li><br>
+  <li><b>Continuous Probability Model:</b> Till now, we only talked about discrete probability model where probability of every outcome can be calculated. Like, upon rolling a die, we can calculate probabilities of getting each of 1,2,3,4,5 and 6.<br>But a continuous probability model describes scenarios where outcomes are not discrete but can take any value within a range. <b>In such models, probabilities are calculated over intervals instead of specific values, as there are infinitely many possible outcomes.</b></li><br>
+
+  <li><b>Conditional Probability:</b> is the probability of an event occurring given that another event has already occurred. It provides a way to update the probability of an event based on new information. The conditional probability of event A given that event B has occurred is denoted as P(A|B).<br><br>
+P(A|B)=P(A ∩ B)/P(B), given P(B)≠0
+  </li><br>
+
+  <li><b>Total Probability Theorem:</b> </li>
+  
 </ul>
