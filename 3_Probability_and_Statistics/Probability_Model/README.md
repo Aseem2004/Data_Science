@@ -24,6 +24,14 @@
 P(A|B)=P(A ∩ B)/P(B), given P(B)≠0
   </li><br>
 
-  <li><b>Total Probability Theorem:</b> </li>
+  <li><b>Total Probability Theorem:</b> It provides a way to calculate the probability of an event based on a partition of the sample space.<br><br>
+  If B1,B2,....,Bn are mutually exclusive events that form a partition of the sample space (i.e., they are non-overlapping and their union covers the entire sample space), and A is any event, then the probability of A can be expressed as:
+
+
+P(A)=P(A∣B1)P(B1)+P(A∣B2)P(B2)+…+P(A∣Bn)P(Bn)<br>
+OR simply as<br>
+P(A)=P(A∩B1)+P(A∩B2)+....+P(A∩Bn)</li><br>
+
+<li></li>
   
 </ul>
