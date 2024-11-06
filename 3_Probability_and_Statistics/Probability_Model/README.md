@@ -30,8 +30,16 @@ P(A|B)=P(A ∩ B)/P(B), given P(B)≠0
 
 P(A)=P(A∣B1)P(B1)+P(A∣B2)P(B2)+…+P(A∣Bn)P(Bn)<br>
 OR simply as<br>
-P(A)=P(A∩B1)+P(A∩B2)+....+P(A∩Bn)</li><br>
+P(A)=P(A∩B1)+P(A∩B2)+....+P(A∩Bn)</li>
 
-<li></li>
+<li><b>Statistical Independence:</b> It refers to a relationship between two events where the occurrence of one event does not affect the probability of the other event occurring.<br>
+P(A|B)=P(A) means A does not depend upon B. And A is independent of B also means B is independent of A i.e. P(B|A)=P(B).<br>
+For two events, A and B, they are said to be independent if: P(A∩B)=P(A)⋅P(B).<br><br>
+  For events A,B, and C to be mutually independent, they must satisfy:<br>
+1) P(A∩B)=P(A)⋅P(B)<br>
+2) P(A∩C)=P(A)⋅P(C)<br>
+3) P(B∩C)=P(B)⋅P(C)<br>
+4) P(A∩B∩C)=P(A)⋅P(B)⋅P(C)
+</li>
   
 </ul>
