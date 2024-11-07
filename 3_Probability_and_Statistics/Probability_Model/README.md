@@ -40,6 +40,6 @@ For two events, A and B, they are said to be independent if: P(A∩B)=P(A)⋅P(B
 2) P(A∩C)=P(A)⋅P(C)<br>
 3) P(B∩C)=P(B)⋅P(C)<br>
 4) P(A∩B∩C)=P(A)⋅P(B)⋅P(C)
-</li>
+</li><br>
   
 </ul>
