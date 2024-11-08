@@ -41,5 +41,9 @@ For two events, A and B, they are said to be independent if: P(A∩B)=P(A)⋅P(B
 3) P(B∩C)=P(B)⋅P(C)<br>
 4) P(A∩B∩C)=P(A)⋅P(B)⋅P(C)
 </li><br>
+
+<li><b>Conditional Independence:</b> It refers to a situation where two events are independent of each other given the knowledge of a third event. In other words, knowing the outcome of the conditioning event makes the two events behave as if they are independent, even if they might not be independent otherwise.<br>
+P(A∩B∣C)=P(A∣C)⋅P(B∣C) or equivalently, P(A∣B∩C)=P(A∣C) and P(B∣A∩C)=P(B∣C).
+</li>
   
 </ul>
