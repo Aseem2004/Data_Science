@@ -44,6 +44,8 @@ For two events, A and B, they are said to be independent if: P(A∩B)=P(A)⋅P(B
 
 <li><b>Conditional Independence:</b> It refers to a situation where two events are independent of each other given the knowledge of a third event. In other words, knowing the outcome of the conditioning event makes the two events behave as if they are independent, even if they might not be independent otherwise.<br>
 P(A∩B∣C)=P(A∣C)⋅P(B∣C) or equivalently, P(A∣B∩C)=P(A∣C) and P(B∣A∩C)=P(B∣C)
-</li>
+</li><br>
+
+<li><b>Bayes' Rule:</b>  It is a fundamental theorem in probability that allows us to update the probability of a hypothesis based on new evidence. It provides a way to calculate the conditional probability of an event, given prior knowledge about related events.</li>
   
 </ul>
