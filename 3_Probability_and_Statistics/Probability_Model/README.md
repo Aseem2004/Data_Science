@@ -46,6 +46,13 @@ For two events, A and B, they are said to be independent if: P(A∩B)=P(A)⋅P(B
 P(A∩B∣C)=P(A∣C)⋅P(B∣C) or equivalently, P(A∣B∩C)=P(A∣C) and P(B∣A∩C)=P(B∣C)
 </li><br>
 
-<li><b>Bayes' Rule:</b>  It is a fundamental theorem in probability that allows us to update the probability of a hypothesis based on new evidence. It provides a way to calculate the conditional probability of an event, given prior knowledge about related events.</li>
+<li><b>Bayes' Rule:</b>  It is a fundamental theorem in probability that allows us to update the probability of a hypothesis based on new evidence. It provides a way to calculate the conditional probability of an event, given prior knowledge about related events.<br>
+For two events, A and B:<br>
+P(A∣B)=P(B∣A)⋅P(A)/P(B), where:<br>
+1) P(A∣B): The probability of A given that B has occurred (posterior probability).<br>
+2) P(B∣A): The probability of B given that A is true (likelihood).<br>
+3) P(A): The probability of A occurring (prior probability).<br>
+4) P(B): The probability of B occurring (marginal probability).<br>
+</li>
   
 </ul>
