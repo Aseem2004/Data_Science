@@ -27,5 +27,25 @@
  <li><b>Bernoulli Random Variable:</b> A Bernoulli random variable is a type of discrete random variable that represents only two possible outcomes: success (usually represented by 1) and failure (usually represented by 0).<br><br>
  P(X=x)=> p, if x=1 and 1−p, if x=0. {p:probability of success}<br>
  Alternatively, P(X=x)=p<sup>x</sup>(1-p)<sup>1-x</sup> 
-</li>
+</li><br>
+
+<li><b>Bernoulli Trial:</b> A Bernoulli trial refers to the actual experiment or single event that results in one of two possible outcomes: success or failure.
+It is the process or act of performing the random experiment.</li><br>
+
+<li><b>Independent Bernoulli trials:</b> They are multiple repetitions of a Bernoulli trial where the outcome of one trial does not influence the outcomes of others.<br>
+Example: Tossing a fair coin: Each flip is a Bernoulli trial.<br>
+Probability of heads (p=0.5) and tails (1−p=0.5) remains constant. Outcomes are independent.<br><br>
+  If two coins are tossed simultaneously with P(H)=0.7 (the probability of heads for each coin), we can identify the following independent Bernoulli trials and their probabilities.<br>
+
+Coin 1 outcome: Tossing the first coin.<br>
+Success (H): 𝑃(𝐻1)=0.7<br>
+Failure (T): 𝑃(𝑇1)=1−𝑃(𝐻1)=0.3, same for coin 2<br><br>
+
+Using the independence property, the probabilities of the combined outcomes can be calculated as: P(Outcome)=P(Coin 1 outcome)⋅P(Coin 2 outcome)<br>
+Possible outcomes:
+HH (Heads on both coins):P(HH)=P(H1)⋅P(H2)=0.7⋅0.7=0.49<br>
+P(HT)=P(TH)=0.21<br>
+P(TT)=0.09
+
+</li> 
 </ul>
