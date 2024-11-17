@@ -17,7 +17,15 @@
 
   <b><h2>Note:</h2></b> If probability of a random variable is 0, it always mean it represents an empty set or an impossible event in case of discrete random variable but doesn't in case of continuous random variable.<br>
 
- <li><b>Probability Mass Function (PMF)</b> It is a function that gives the probability of a discrete random variable taking on specific values. It maps each possible value of the random variable to its probability, ensuring the following properties:<br>
+ <li><b>Probability Mass Function (PMF):</b> It is a function that gives the probability of a discrete random variable taking on specific values. It maps each possible value of the random variable to its probability, ensuring the following properties:<br>
 1) Non-negativity: P(X=x)≥0 for all x.<br>
-2) Sum of probabilities equals 1: ∑ (x∈S) P(X=x)=1, where S is the set of all possible values the random variable can take.</li>
+2) Sum of probabilities equals 1: ∑<sub>(x∈S)</sub> P(X=x)=1, where S is the set of all possible values the random variable can take.<br><br>
+   Example: Consider a fair six-sided die. Let X be the number rolled. The PMF is:<br>
+   P(X=x)=> 1/6, if x∈{1,2,3,4,5,6} and 0, otherwise
+ </li><br>
+
+ <li><b>Bernoulli Random Variable:</b> A Bernoulli random variable is a type of discrete random variable that represents only two possible outcomes: success (usually represented by 1) and failure (usually represented by 0).<br><br>
+ P(X=x)=> p, if x=1 and 1−p, if x=0. {p:probability of success}<br>
+ Alternatively, P(X=x)=p<sup>x</sup>(1-p)<sup>1-x</sup> 
+</li>
 </ul>
