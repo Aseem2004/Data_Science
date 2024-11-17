@@ -17,5 +17,7 @@
 
   <b><h2>Note:</h2></b> If probability of a random variable is 0, it always mean it represents an empty set or an impossible event in case of discrete random variable but doesn't in case of continuous random variable.<br>
 
- <li><b></b></li>
+ <li><b>Probability Mass Function (PMF)</b> It is a function that gives the probability of a discrete random variable taking on specific values. It maps each possible value of the random variable to its probability, ensuring the following properties:<br>
+1) Non-negativity: P(X=x)≥0 for all x.<br>
+2) Sum of probabilities equals 1: ∑ (x∈S) P(X=x)=1, where S is the set of all possible values the random variable can take.</li>
 </ul>
