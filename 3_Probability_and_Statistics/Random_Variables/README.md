@@ -89,4 +89,25 @@ The probability of observing exactly k successes in n trials is given by: P(X = 
     </tr>
   </tbody>
  </table>
+
+ <li><b>Continuous Random Variable:</b> It is a type of random variable that can take any value within a continuous range of values, typically on an interval of the real number line. Continuous random variables are defined over an interval, such as [a,b], or [0,∞), or (−∞,∞).<br>
+   <ul>
+<li> Probability: The probability of a continuous random variable taking any exact value is 0 (P(X=x)=0, if we take any positive value, sum of all exceeds 1, violating main axiom of probability). Instead, probabilities are calculated over intervals, such as P(a≤X≤b).</li></ul>
+ </li><br>
+
+ <li><b>A Probability Density Function (PDF):</b> It is a mathematical function that describes the likelihood of a continuous random variable taking on a particular value. While the probability of a continuous random variable at an exact point is 0, the PDF provides a way to calculate the probability of the variable falling within an interval.<br><br>
+ Properties:<br>
+   1) Non-Negativity: The PDF is always non-negative for all values of x: f(x)≥0 for all x<br>
+   2) Total Probability Equals 1: The area under the curve of the PDF over the entire range is 1: &#8747;(-∞ to ∞)f(x)dx=1<br>
+   3) Interval Probability: The probability that the random variable X falls within an interval [a,b] is given by the area under the PDF curve within that interval: P(a≤X≤b)=∫ (a to b)f(x)dx
+ </li><br>
+
+ <li><b>Uniform Distribution/ Uniform Random Variable:</b> It is a probability distribution where all outcomes are equally likely within a specific range. It can be categorized into two types:<br>
+1) Discrete Uniform Distribution: Each value in a finite set has an equal probability.<br>
+   A random variable X is discrete uniform if it can take on n values, each with equal probability: P(X=x)= 1/n<br><br>
+​
+2) Continuous Uniform Distribution: Any value within a given interval is equally likely.<br>
+   The Probability Density Function (PDF) is: f(x)=> 1/(b−a) if a≤x≤b, and 0 otherwise
+
+ </li>
 </ul>
