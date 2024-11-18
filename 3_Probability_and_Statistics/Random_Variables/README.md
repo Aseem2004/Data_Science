@@ -46,6 +46,47 @@ Possible outcomes:
 HH (Heads on both coins):P(HH)=P(H1)⋅P(H2)=0.7⋅0.7=0.49<br>
 P(HT)=P(TH)=0.21<br>
 P(TT)=0.09
+</li><br>
 
-</li> 
+<li><b>Geometric Random Variable:</b> It is a type of discrete random variable that models the number of trials needed to get the first success in a sequence of independent and identically distributed Bernoulli trials, where each trial has a constant probability of success p.<br>
+Example: Flipping a coin until head appears {H, TH, TTTTTTH, ....} <br><br>
+The probability of the first success occurring on the k-th trial is: P(X=k)=(1−p)<sup>k-1</sup>p, where (1−p)<sup>k-1</sup> is the probability of k−1 failures before the first success.
+</li>
+
+ <b><h2>Note:</h2></b> Sum of all values of PMF of geometric random variable is 1 i.e. {P(H) + P(TH) + P(TTH) + P(......)}=1.
+
+ <li><b>Binomial Random Variable:</b> It is a type of discrete random variable that counts the number of successes in a fixed number of independent Bernoulli trials, where each trial has the same probability of success p.<br>
+The probability of observing exactly k successes in n trials is given by: P(X = k) = (nCk) * p<sup>k</sup> * (1 - p)<sup>(n - k)</sup>
+ </li><br><br>
+
+ <table border="1" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Bernoulli</th>
+      <th>Binomial</th>
+      <th>Geometric</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Definition</b></td>
+      <td>A random variable that represents a single trial with two outcomes (success or failure).</td>
+      <td>A random variable representing the number of successes in a fixed number of independent Bernoulli trials.</td>
+      <td>A random variable representing the number of trials until the first success in independent Bernoulli trials.</td>
+    </tr>
+    <tr>
+      <td><b>Range of Values</b></td>
+      <td>{0, 1}</td>
+      <td>{0, 1, 2, ..., n}</td>
+      <td>{1, 2, 3, ...}</td>
+    </tr>
+    <tr>
+      <td><b>Example</b></td>
+      <td>Flipping a coin once (Head = 1, Tail = 0).</td>
+      <td>Counting how many heads occur in 10 flips of a coin.</td>
+      <td>Counting how many coin flips are needed to get the first head.</td>
+    </tr>
+  </tbody>
+ </table>
 </ul>
