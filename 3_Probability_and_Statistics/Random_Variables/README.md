@@ -108,6 +108,43 @@ The probability of observing exactly k successes in n trials is given by: P(X = 
 ​
 2) Continuous Uniform Distribution: Any value within a given interval is equally likely.<br>
    The Probability Density Function (PDF) is: f(x)=> 1/(b−a) if a≤x≤b, and 0 otherwise
+ </li><br><br>
 
+ <li><b>Exponential Distribution:</b> It is a continuous probability distribution used to model the time until an event occurs, assuming the events happen at a constant rate.<br>
+ Example: Models the time until a machine breaks down or models the time between customer arrivals at a service point.<br><br>
+
+ The PDF of an exponential random variable X with rate parameter λ>0 is given by:<br>
+ f(x)=> λe<sup>−λx</sup> for x≥0, 0 otherwise, where λ is the rate parameter (events per unit time)
  </li>
+
+ <li><b>Normal/Gaussian Distribution:</b> It describes a continuous random variable where most of the data points cluster around the mean, and the probabilities for values further away from the mean decrease symmetrically. Example: Analyzing exam scores or height of individuals.<br>
+  The PDF of a normal distribution with mean μ and standard deviation σ is:<br>
+  
+   ![image](https://github.com/user-attachments/assets/4a3d2de1-5f16-49e0-9f8e-c7197fde6624)<br>
+
+   μ: Mean (center of the distribution), highest peak will be at x=μ and −∞<μ<∞.<br>
+   σ: Standard deviation (controls the spread), higher the value slower will be decay and vice versa and σ>0.<br><br>
+   It is a Bell-shaped and symmetric curve about the mean μ.
+ </li><br>
+
+ <li><b>Transformation of Random Variables:</b> It involves mapping a random variable X to another random variable Y using a function g(X).<br><br>
+ 1)For Discrete RV: PMF of Y can be found by summing over all x that map to the same y:<br>
+   
+   ![image](https://github.com/user-attachments/assets/534e888a-1d72-4f46-b406-9123639cc661) <br>
+   
+   Let X be a random variable representing the outcome of a fair 6-sided die roll and Y=X%3.<br>
+   Possible values of X={1,2,3,4,5,6} and Y={0,1,2,0,1,2}. So P(Y=y)=2/6=1/3.<br>
+
+2)For Continuous RV: If X is a continuous random variable with a probability density function (PDF) f<sub>X</sub>(x), the PDF of Y is determined using:<br>
+  ![image](https://github.com/user-attachments/assets/6274802b-151e-416f-85a0-10018130c37e)
+ </li><br>
+
+ <li><b>Cumulative Distribution Function (CDF):</b> It tells us the probability that a random variable X is less than or equal to a certain value x. It tells you the probability up to any point x.<br>
+   1)For Discrete RV: The CDF is the cumulative sum of probabilities.<br>
+Example: Tossing a fair die: P(X≤3)=P(X=1)+P(X=2)+P(X=3)= 1/6 + 1/6 +1/6 = 1/2/<br>
+
+   2)For Continuous RV: Here, you integrate the Probability Density Function (PDF) over all values up to x.<br>
+   P(X≤x)=∫(−∞ to x) f(t)dt </li>
+
+   <b><h2>Note:</h2></b> The area under the CDF curve is not necessarily 1.
 </ul>
