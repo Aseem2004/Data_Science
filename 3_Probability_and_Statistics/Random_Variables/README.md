@@ -146,5 +146,37 @@ Example: Tossing a fair die: P(X≤3)=P(X=1)+P(X=2)+P(X=3)= 1/6 + 1/6 +1/6 = 1/2
    2)For Continuous RV: Here, you integrate the Probability Density Function (PDF) over all values up to x.<br>
    P(X≤x)=∫(−∞ to x) f(t)dt </li>
 
-   <b><h2>Note:</h2></b> The area under the CDF curve is not necessarily 1.
+   <b><h2>Note:</h2></b> The area under the CDF curve is not necessarily 1.<br>
+
+   <li><b>Expectations:</b> Expectation (or Expected Value) is a key concept in probability and statistics that represents the average or mean value of a random variable if the experiment were to be repeated many times.<br><br>
+   1)For a discrete random variable X, the expected value is calculated as: E[X]= ∑ x<sub>i</sub>.P(x<sub>i</sub>), where x<sub>i</sub> are possible values of x and P(x<sub>i</sub>) is probability of x<sub>i</sub>.<br>
+   Example: For a fair 6-sided die, the possible outcomes are 1, 2, 3, 4, 5, and 6. Since the die is fair, the probability of each outcome is 1/6<br>
+The expected value is: E[X]= 1/6 (1+2+3+4+5+6)=3.5<br>
+So, the expected value of a roll of a fair die is 3.5, even though it’s not possible to roll a 3.5. It represents the average outcome if you roll the die many times.<br><br>
+
+2)For a continuous random variable, the expected value is calculated as: E[X]=∫(−∞ to ∞) f(x)dx where, f(x) is the probability density function (PDF) of the random variable X.<br>
+
+Expectations of:<br>
+<ol type='A'>
+  <li>Bernoulli RV: The expectation of a Bernoulli random variable X is the probability of success of the Bernoulli trial.<br>
+  E[X]=p<br>
+  This makes sense intuitively, as p represents the probability of success, which is the average value of X over many trials.</li><br>
+
+  <li>Geometric RV:The expectation of a Geometric random variable X, which represents the number of trials required to get the first success in a sequence of independent Bernoulli trials with success probability p, is given by: E[X] = 1/p<br>
+    The mean of a Geometric random variable X depends inversely on p. If the probability of success p is high, fewer trials are needed on average to achieve the first success, and vice versa.</li><br>
+
+  <li>Binomial RV: The expectation of a Binomial random variable X is given by the formula: E[X]=n⋅p<br>
+  The expected number of successes in n independent trials is simply the number of trials n multiplied by the probability of success p for each trial.</li><br>
+
+  <li>Uniform Distribution: The expectation of a Uniform random variable X is given by the formula: E[X] = (a+b)/2<br>
+    Since the uniform distribution is symmetric and all outcomes are equally likely within the interval [a,b], the expected value (or the mean) is simply the midpoint of the interval [a,b].</li><br>
+
+  <li>Exponential Distribution: The expectation of an Exponential random variable X with rate parameter λ (inverse scale parameter) is given by the formula: E[X] = 1/λ<br>
+  If λ is small, events occur less frequently, and the expected time between events is larger.</li><br>
+
+  <li>Gaussian Distribution: The expectation (mean) of a Gaussian random variable X with mean μ and standard deviation σ is: E[X]=μ<br>
+   For a Gaussian random variable, the expectation is simply the mean μ, reflecting the symmetry of the distribution around this central point.</li>
+</ol>
+
+   </li>
 </ul>
