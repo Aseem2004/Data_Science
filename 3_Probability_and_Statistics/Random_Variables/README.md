@@ -176,7 +176,76 @@ Expectations of:<br>
 
   <li>Gaussian Distribution: The expectation (mean) of a Gaussian random variable X with mean μ and standard deviation σ is: E[X]=μ<br>
    For a Gaussian random variable, the expectation is simply the mean μ, reflecting the symmetry of the distribution around this central point.</li>
-</ol>
+</ol></li><br>
 
+<li><b>Law of Large Numbers:</b> It is a fundamental theorem in probability theory that describes the result of performing the same experiment a large number of times. It essentially states that as the number of trials or observations increases, the sample average (or sample mean) will get closer to the expected value (or population mean / true mean) of the random variable.<br>
+Example:<br>
+If you flip a coin 10 times, you might get 6 heads and 4 tails. The sample mean would be 0.6.<br>
+If you flip the coin 100 times, you might get 52 heads and 48 tails. The sample mean would be 0.52.<br>
+If you flip the coin 10,000 times, you might get 5,000 heads and 5,000 tails. The sample mean would be very close to 0.5.<br><br>
+It doesn't mean the sample mean will be exactly the expected value every time, but rather that it will get closer to the true average as the sample size grows larger.
+</li><br>
+
+   <li><b>Independent and Identically Distributed (i.i.d.) Random Variables:</b> Two or more random variables are said to be independent if the occurrence or outcome of one does not affect the occurrence or outcome of the other(s).Random variables are said to be identically distributed if they have the same probability distribution. This means that they share the same type of distribution (such as Normal, Binomial, Poisson, etc.), with identical parameters (mean, variance, etc.).<br>
+   When random variables are both independent and identically distributed, they are referred to as i.i.d. random variables. This means that not only are the random variables independent of each other (no variable’s outcome influences another), but they also follow the same probability distribution (they all have the same type and parameters of distribution).</li><br>
+
+   <li><b>Easy Comparison:</b><br><br>
+   <table>
+  <thead>
+    <tr>
+      <th>Random Variable</th>
+      <th>Expectation (E[X])</th>
+      <th>Range of X</th>
+      <th>Range of Parameters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bernoulli</td>
+      <td>p</td>
+      <td>{0, 1}</td>
+      <td>0 ≤ p ≤ 1 (probability of success)</td>
+    </tr>
+    <tr>
+      <td>Geometric</td>
+      <td>1/p</td>
+      <td>{1, 2, 3, ...}</td>
+      <td>0 < p ≤ 1 (probability of success)</td>
+    </tr>
+    <tr>
+      <td>Binomial</td>
+      <td>n × p</td>
+      <td>{0, 1, 2, ..., n}</td>
+      <td>
+        n: positive integer<br>
+        0 ≤ p ≤ 1 (probability of success)
+      </td>
+    </tr>
+    <tr>
+      <td>Uniform (Continuous)</td>
+      <td>(a + b) / 2</td>
+      <td>[a, b]</td>
+      <td>
+        a < b<br>
+        a, b: any real numbers
+      </td>
+    </tr>
+    <tr>
+      <td>Exponential</td>
+      <td>1/λ</td>
+      <td>[0, ∞)</td>
+      <td>λ > 0 (rate parameter)</td>
+    </tr>
+    <tr>
+      <td>Gaussian (Normal)</td>
+      <td>μ</td>
+      <td>(-∞, ∞)</td>
+      <td>
+        μ: any real number (mean)<br>
+        σ > 0 (standard deviation)
+      </td>
+    </tr>
+  </tbody>
+</table>
    </li>
 </ul>
