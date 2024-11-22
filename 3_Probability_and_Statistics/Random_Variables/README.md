@@ -247,5 +247,73 @@ It doesn't mean the sample mean will be exactly the expected value every time, b
     </tr>
   </tbody>
 </table>
-   </li>
+   </li><br>
+
+  <li><b>Expectation of Transformed RV:</b> The expectation of a transformed random variable Y=g(X) is given by the formula:<br>
+  E[Y]=E[g(X)]= ∑ g(x)P(X=x)</li><br>
+
+  <li><b>Moments:</b> Moments are quantitative measures related to the shape of a probability distribution. Moments help describe various properties of a distribution, such as its location, spread, skewness, and kurtosis.<br>
+
+  <ul>
+    <li><b>Raw Moments:</b> Raw moments are calculated with respect to the origin (zero):<br>
+      𝜇<sub>n</sub>′=E[X<sup>n</sup>]</li><br>
+
+  <li><b>Central Moments:</b> Central moments are calculated with respect to the mean (μ):<br>
+      𝜇<sub>n</sub>=E[(X−μ)<sup>n</sup>] where: μ<sub>n</sub>: n-th central moment and μ: Mean of the distribution.<br><br>
+      
+Key central moments:<br>
+<ol type='1'>
+<li>First moment(μ<sub>1</sub>): Always 0 (since it measures deviation from the mean).</li>
+<li>Second moment(μ<sub>2</sub>): Variance (𝜎<sup>2</sup>).</li>
+<li>Third moment (μ<sub>3</sub>): Measures skewness (asymmetry of the distribution).</li>
+<li>Fourth moment (μ<sub>4</sub>): Measures kurtosis (tailedness of the distribution).</li></li></ol>
+  </ul>
+</li><br>
+
+  <li><b>Variance:</b> Variance is a measure of how much the values in a data set deviate from the mean (average) of that set. It tells you the spread or dispersion of the data points around the mean. If the variance is high, it indicates that the data points are spread out over a large range of values.
+If the variance is low, it means that the data points are closer to the mean.<br>
+    
+  ![image](https://github.com/user-attachments/assets/636852f9-24e1-4fb4-9559-7f071807d4e2)
+
+Var(X)=E[X<sup>2</sup>] - (E[X])<sup>2</sup></li><br>
+
+<li><b>Skewness:</b> Skewness is a statistical measure that describes the asymmetry of the distribution of values in a dataset or a probability distribution. It indicates whether the data is skewed (or lopsided) to the left or right.<br><br>
+Types:
+  <ol type='1'>
+    <li><b>Positive Skew (Right Skew)</b>: The right tail of the distribution is longer or fatter than the left.<br>
+Most of the data points are concentrated on the left side, with fewer but larger values on the right.<br>
+For a positively skewed distribution, the mean is greater than the median.<br>
+Example: Income distribution in a country, where most people earn below average, but a few earn extremely high amounts.</li><br>
+
+   <li><b>Negative Skew (Left Skew):</b> The left tail of the distribution is longer or fatter than the right.</br>
+Most of the data points are concentrated on the right side, with fewer but smaller values on the left.</br>
+For a negatively skewed distribution, the mean is less than the median.</br>
+Example: Age of retirement, where most people retire at around 60-70, but a few retire earlier.</li></br>
+
+<li><b>Zero Skew (Symmetrical Distribution):</b> The distribution is symmetrical, meaning the left and right tails are mirror images of each other.</br>
+For a perfectly symmetrical distribution, the mean equals the median.<br>
+Example: A normal distribution has zero skew.</li>
+  </ol><br>
+
+![image](https://github.com/user-attachments/assets/8750ae3d-e1fb-4ce5-8561-868b87000ff2)
+
+</li><br>
+
+<li><b>Kurtosis:</b> Kurtosis is a statistical measure that describes the shape of a probability distribution's tails and the sharpness (peakedness) of its central peak. In simple terms, it gives us an idea of how outlier-prone a distribution is compared to a normal distribution.<br.<br>
+Types:
+<ol type='1'>
+  <li><b>Leptokurtic:</b> Distributions with positive kurtosis are called leptokurtic. They have fatter tails and a higher peak compared to the normal distribution.<br>
+Leptokurtic distributions tend to have more extreme values (outliers), indicating a higher likelihood of extreme events.</li><br>
+
+<li><b>Platykurtic:</b>Distributions with negative kurtosis are called platykurtic. They have thin tails and a lower peak than a normal distribution.</br>
+Platykurtic distributions have fewer outliers and are more spread out.</li><br>
+
+<li><b>Mesokurtic:</b>A normal distribution has zero excess kurtosis and is called mesokurtic. It serves as a reference distribution.<br>
+It has neither excessively fat tails nor overly thin tails.</li>
+</ol><br>
+
+![image](https://github.com/user-attachments/assets/fd46febc-1d4c-47d5-b2eb-cb8ea6a47593)
+
+When calculating kurtosis directly from the formula, the result for a normal distribution is 3. To make the comparison more meaningful, we subtract 3 from the kurtosis value, which makes the kurtosis of the normal distribution equal to 0. This adjustment is known as the excess kurtosis. If we don't subtract 3, we have to take normal value as 3 and comparisons to be made with 3 and not 0.</li><br>
+
 </ul>
