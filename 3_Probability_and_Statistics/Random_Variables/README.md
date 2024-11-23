@@ -316,4 +316,40 @@ It has neither excessively fat tails nor overly thin tails.</li>
 
 When calculating kurtosis directly from the formula, the result for a normal distribution is 3. To make the comparison more meaningful, we subtract 3 from the kurtosis value, which makes the kurtosis of the normal distribution equal to 0. This adjustment is known as the excess kurtosis. If we don't subtract 3, we have to take normal value as 3 and comparisons to be made with 3 and not 0.</li><br>
 
+<li><b>Multiple Random Variables:</b> When dealing with multiple random variables, we study the relationships and interactions between two or more random variables.
+
+<ul>
+  <li><b>Joint Probability Distribution:</b> For two or more random variables, the joint probability distribution describes the probability that each of the variables takes on a specific value simultaneously.<br>
+    
+  ![image](https://github.com/user-attachments/assets/8b35d962-2b53-45d1-8009-8406fb3a75ac)
+</li><br>
+
+<li><b>Marginal Distribution:</b> The marginal distribution of one variable is obtained by summing (discrete) or integrating (continuous) over the other variable in the joint distribution.<br>
+
+![image](https://github.com/user-attachments/assets/f53e5559-ecc8-4ac9-8f64-ab630d3bf8f3)
+</li><br>
+
+<li><b>Independence of Random Variables:</b> Two random variables X and Y are independent if:<br>
+  P(X=x,Y=y)=P(X=x)⋅P(Y=y)  (Discrete)<br>
+  f<sub>X,Y</sub>(x,y)=f<sub>X</sub>(x).f<sub>Y</sub>(y)  (Continuous)</li><br>
+</ul>
+</li><br>
+
+<li><b>Expectation for Multiple Random Variables:</b><br>
+  1) Discrete RV:<br>
+  
+  ![image](https://github.com/user-attachments/assets/2813545d-da0d-4025-8736-edcf3cb5bc33)<br>
+
+  2)Continuous RV:<br>
+
+  ![image](https://github.com/user-attachments/assets/078731e3-7470-45ee-903a-e78fb949b68d)
+</li><br>
+
+<b><h2>Note:</h2></b> The expectation of the sum of multiple random variables is always linear, regardless of whether the random variables are independent or dependent.<br>
+
+E[X<sub>1</sub> + X<sub>2</sub> + ... + X<sub>n</sub>] = E[X<sub>1</sub>] + E[X<sub>2</sub>] + .. + E[X<sub>n</sub>]<br><br>
+
+<li></li>
+
+
 </ul>
