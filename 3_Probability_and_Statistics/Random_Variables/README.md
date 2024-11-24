@@ -332,6 +332,17 @@ When calculating kurtosis directly from the formula, the result for a normal dis
 <li><b>Independence of Random Variables:</b> Two random variables X and Y are independent if:<br>
   P(X=x,Y=y)=P(X=x)⋅P(Y=y)  (Discrete)<br>
   f<sub>X,Y</sub>(x,y)=f<sub>X</sub>(x).f<sub>Y</sub>(y)  (Continuous)</li><br>
+
+  <li><b>Covariance:</b> Covariance measures the degree to which two random variables vary together.<br>
+    In simpler terms, it tells us:<br>
+    How two variables are related: Whether an increase in one variable corresponds to an increase or decrease in the other.<br>
+    Direction of relationship: Positive covariance indicates that the variables increase together, while negative covariance means one increases as the other decreases.<br><br>
+  
+  Let X and Y be two random variables. The covariance is given by:<br>
+  Cov(X,Y) = E[(X−E[X])(Y−E[Y])] = E[XY] - E[X]E[Y] 
+  </li><br>
+
+  <li><b>Correlation:</b> </li>
 </ul>
 </li><br>
 
@@ -349,7 +360,10 @@ When calculating kurtosis directly from the formula, the result for a normal dis
 
 E[X<sub>1</sub> + X<sub>2</sub> + ... + X<sub>n</sub>] = E[X<sub>1</sub>] + E[X<sub>2</sub>] + .. + E[X<sub>n</sub>]<br><br>
 
-<li></li>
+<b><h2>Note:</h2></b> The expectation of the product of multiple random variables <b>if and only if random variables are independent:</b><br>
 
+E[X<sub>1</sub>.X<sub>2</sub>....X<sub>n</sub>] = E[X<sub>1</sub>].E[X<sub>2</sub>]....E[X<sub>n</sub>]<br><br>
+
+<li><b></b></li>
 
 </ul>
