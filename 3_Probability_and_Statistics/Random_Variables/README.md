@@ -342,7 +342,18 @@ When calculating kurtosis directly from the formula, the result for a normal dis
   Cov(X,Y) = E[(X−E[X])(Y−E[Y])] = E[XY] - E[X]E[Y] 
   </li><br>
 
-  <li><b>Correlation:</b> </li>
+  <li><b>Correlation:</b> Correlation is a statistical measure that describes the strength and direction of a linear relationship between two random variables.<br>
+  The correlation coefficient (r) always lies between −1 and 1<br>
+  r=1: Perfect positive correlation (as one variable increases, the other increases).<br>
+  r=−1: Perfect negative correlation (as one variable increases, the other decreases).<br>
+  r=0: No linear correlation (the variables are independent in a linear sense).<br><br>
+  
+  Formula: For two random variables X and Y:<br>
+  r=Cov(X,Y)/𝜎<sub>X</sub>𝜎<sub>Y</sub>, where Cov(X,Y)  is Covariance of X and Y, 𝜎<sub>X</sub> and 𝜎<sub>Y</sub> are Standard Deviations of X and Y.
+  </li><br>
+
+  <li><b>Difference Between Correlation and Covariance:</b> Covariance measures the direction of a relationship but does not standardize the values. Hence, its magnitude depends on the scale of the variables.<br>
+Correlation is the normalized version of covariance, ensuring values are between −1 and 1, making it scale-independent.</li>
 </ul>
 </li><br>
 
@@ -364,6 +375,34 @@ E[X<sub>1</sub> + X<sub>2</sub> + ... + X<sub>n</sub>] = E[X<sub>1</sub>] + E[X<
 
 E[X<sub>1</sub>.X<sub>2</sub>....X<sub>n</sub>] = E[X<sub>1</sub>].E[X<sub>2</sub>]....E[X<sub>n</sub>]<br><br>
 
-<li><b></b></li>
+<li><b>Multivariate Gaussian Distribution:</b> The Multivariate Gaussian Distribution (or Multivariate Normal Distribution) is a generalization of the univariate Gaussian (normal) distribution to multiple variables. It describes a set of variables that may be correlated, each of which follows a normal distribution.<br>
+
+![image](https://github.com/user-attachments/assets/44952240-9e64-4065-b4be-9a65f69a9e5b)
+
+</li><br>
+
+<li><b>Conditional Probability for Multiple RV:</b><br>
+<ol type='1'>
+  <li><b>Discrete RV:</b><br>
+    For discrete random variables, say X<sub>1</sub>, X<sub>2</sub>, conditional probability of X<sub>1</sub> = x<sub>1</sub>, given X<sub>2</sub> = x<sub>2</sub> is:<br>
+    P(X<sub>1</sub>=x<sub>1</sub> | X<sub>2</sub>=x<sub>2</sub>) = (P(X<sub>1</sub>=x<sub>1</sub>, X<sub>2</sub>=x<sub>2</sub>) / (P(X<sub>2</sub>=x<sub>2</sub>))
+  </li><br>
+
+  <li><b>Continuous RV:</b><br>
+  f<sub>X<sub>1</sub> | X<sub>2</sub></sub>(x<sub>1</sub> | x<sub>2</sub>) = (f(x<sub>1</sub>,x<sub>2</sub>)/f<sub>X<sub>2</sub></sub>(x<sub>2</sub>))
+  </li>
+</ol>
+</li><br>
+
+<li><b>ndependence of Events in the Case of Multiple Random Variables:</b> The independence of events associated with multiple random variables involves determining whether knowing the value (or event) of one random variable provides any information about the others. If it does not, the random variables (or events) are independent.<br><br>
+  P(X<sub>1</sub>=x<sub>1</sub>, X<sub>2</sub>=x<sub>2</sub>, X<sub>3</sub>=x<sub>3</sub>) = P(X<sub>1</sub>=x<sub>1</sub>).P(X<sub>2</sub>=x<sub>2</sub>).P(X<sub>3</sub>=x<sub>3</sub>)<br>
+  There is no need to check for subsets in 3 or more variables as was in case of non multiple RV. It can be thought as a relaxed form.
+</li><br>
+
+<li><b>Conditional Independence in Multiple Random Variables:</b> Conditional independence occurs when two random variables are independent given the value of a third random variable. That is, knowing the value of the third variable Z makes X and Y independent of each other, even if they are dependent without this condition.<br>
+For three random variables X,Y, and W, they are conditionally independent given Z if: P(X,Y,W∣Z)=P(X∣Z)⋅P(Y∣Z)⋅P(W∣Z).
+</li><br>
+
+<li></li>
 
 </ul>
