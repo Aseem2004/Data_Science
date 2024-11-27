@@ -394,7 +394,7 @@ E[X<sub>1</sub>.X<sub>2</sub>....X<sub>n</sub>] = E[X<sub>1</sub>].E[X<sub>2</su
 </ol>
 </li><br>
 
-<li><b>ndependence of Events in the Case of Multiple Random Variables:</b> The independence of events associated with multiple random variables involves determining whether knowing the value (or event) of one random variable provides any information about the others. If it does not, the random variables (or events) are independent.<br><br>
+<li><b>Independence of Events in the Case of Multiple Random Variables:</b> The independence of events associated with multiple random variables involves determining whether knowing the value (or event) of one random variable provides any information about the others. If it does not, the random variables (or events) are independent.<br><br>
   P(X<sub>1</sub>=x<sub>1</sub>, X<sub>2</sub>=x<sub>2</sub>, X<sub>3</sub>=x<sub>3</sub>) = P(X<sub>1</sub>=x<sub>1</sub>).P(X<sub>2</sub>=x<sub>2</sub>).P(X<sub>3</sub>=x<sub>3</sub>)<br>
   There is no need to check for subsets in 3 or more variables as was in case of non multiple RV. It can be thought as a relaxed form.
 </li><br>
@@ -403,6 +403,8 @@ E[X<sub>1</sub>.X<sub>2</sub>....X<sub>n</sub>] = E[X<sub>1</sub>].E[X<sub>2</su
 For three random variables X,Y, and W, they are conditionally independent given Z if: P(X,Y,W∣Z)=P(X∣Z)⋅P(Y∣Z)⋅P(W∣Z).
 </li><br>
 
-<li></li>
+<li><b>Curse of Dimensioanlity:</b> It refers to the challenges and inefficiencies that arise as the number of dimensions (features) in a dataset increases. In high-dimensional spaces, data points become sparse, and the distance between them grows, making it difficult for machine learning algorithms to find meaningful patterns. This can lead to overfitting, increased computational cost, and degraded model performance.</li><br>
+
+  <li><b></b></li></br>
 
 </ul>
