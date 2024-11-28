@@ -403,8 +403,33 @@ E[X<sub>1</sub>.X<sub>2</sub>....X<sub>n</sub>] = E[X<sub>1</sub>].E[X<sub>2</su
 For three random variables X,Y, and W, they are conditionally independent given Z if: P(X,Y,W∣Z)=P(X∣Z)⋅P(Y∣Z)⋅P(W∣Z).
 </li><br>
 
-<li><b>Curse of Dimensioanlity:</b> It refers to the challenges and inefficiencies that arise as the number of dimensions (features) in a dataset increases. In high-dimensional spaces, data points become sparse, and the distance between them grows, making it difficult for machine learning algorithms to find meaningful patterns. This can lead to overfitting, increased computational cost, and degraded model performance.</li><br>
+<li><b>Curse of Dimensionality:</b> It refers to the challenges and inefficiencies that arise as the number of dimensions (features) in a dataset increases. In high-dimensional spaces, data points become sparse, and the distance between them grows, making it difficult for machine learning algorithms to find meaningful patterns. This can lead to overfitting, increased computational cost, and degraded model performance.</li><br>
 
-  <li><b></b></li></br>
+  <li><b>Parametric Distribution:</b> Parametric methods assume that the data follows a specific distribution with a fixed functional form. These distributions are defined by a set of parameters, such as mean (μ) and standard deviation (σ) in case of Normal distribution.<br>
+  The probability distribution is specified (e.g., Normal, Exponential, Binomial).<br>
+Parameters can often be estimated using methods like Maximum Likelihood Estimation (MLE) or Method of Moments.</li></br>
+
+<li><b>Non Parametric Distribution:</b> Non-parametric methods do not assume a specific distribution for the data. They aim to infer the shape of the distribution from the data itself.<br>
+ Does not assume any fixed functional form for the data.<br>
+Works well for unknown or irregular distributions.<br>
+Example: KDE, Histogram etc.</li><br>
+
+<li><b>Optimal Estimation (Estimation Theory):</b> Estimation theory deals with determining or estimating the values of unknown parameters in a statistical model using observed data. In this context, "optimal estimation" refers to selecting specific methods, strategies, or estimators to meet the goals of the estimation process under certain conditions or constraints. These estimators are chosen based on trade-offs between bias, variance, efficiency, and complexity.</li><br>
+
+<li><b>Maximum Likelihood Estimation (MLE):</b> Maximum Likelihood Estimation (MLE) is a statistical method used to estimate the parameters of a probability distribution or model. It identifies the parameter values that maximize the likelihood of observing the given data.<br>
+
+Suppose you have a set of observations x<sub>1</sub>, x<sub>2</sub>, ...., x<sub>n</sub>, and you assume these observations follow a certain probability P(x;θ), where θ represents the unknown parameters of the distribution. The likelihood function L(θ) measures the probability of observing the given data as a function of the parameters θ:<br>
+![image](https://github.com/user-attachments/assets/178fa5fc-ed4c-446d-812e-e0dc8be3ac06)
+
+Here, we find derivative of L(θ) wrt θ and put it equal to 0 to find maximum value of parameter θ.<br><br>
+
+<b><h2>Note:</h2></b> Log likelihood: Since the likelihood function is often a product of probabilities, it’s more convenient to work with the natural logarithm of the likelihood, called the log-likelihood.<br>
+
+![image](https://github.com/user-attachments/assets/e19a16d2-4104-4d01-bbaf-4b3589cc0cf7)
+
+Here, max value of sum is find instead of product but both are same.</li><br>
+
+<li><b></b></li>
+
 
 </ul>
