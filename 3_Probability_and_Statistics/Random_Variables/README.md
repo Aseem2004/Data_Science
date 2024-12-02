@@ -421,15 +421,45 @@ Example: KDE, Histogram etc.</li><br>
 Suppose you have a set of observations x<sub>1</sub>, x<sub>2</sub>, ...., x<sub>n</sub>, and you assume these observations follow a certain probability P(x;θ), where θ represents the unknown parameters of the distribution. The likelihood function L(θ) measures the probability of observing the given data as a function of the parameters θ:<br>
 ![image](https://github.com/user-attachments/assets/178fa5fc-ed4c-446d-812e-e0dc8be3ac06)
 
-Here, we find derivative of L(θ) wrt θ and put it equal to 0 to find maximum value of parameter θ.<br><br>
+Here, we find derivative of L(θ) wrt θ and put it equal to 0 to find maximum value of parameter θ.<br>
+MLE minimizes the KL divergence<br><br></li>
 
 <b><h2>Note:</h2></b> Log likelihood: Since the likelihood function is often a product of probabilities, it’s more convenient to work with the natural logarithm of the likelihood, called the log-likelihood.<br>
 
 ![image](https://github.com/user-attachments/assets/e19a16d2-4104-4d01-bbaf-4b3589cc0cf7)
 
-Here, max value of sum is find instead of product but both are same.</li><br>
+Here, max value of sum is find instead of product but both are same.<br>
 
-<li><b></b></li>
+<li><b>KL Divergence (Kullback-Leibler Divergence):</b> It is a measure of how one probability distribution Q(x) (the approximate distribution) differs from another P(x) (the true distribution).<br>
+  
+![image](https://github.com/user-attachments/assets/709bfd85-b450-4b2a-b3e2-ad2b208318fe)
 
+</li><br>
 
+<li><b>Maximum A Posteriori Estimate (MAP):</b> is a statistical technique to estimate the parameters of a model by incorporating prior beliefs about the parameters. It is an extension of the Maximum Likelihood Estimation (MLE).<br>
+In MLE, the parameter θ is treated as a fixed but unknown quantity. The method focuses solely on the likelihood P(X∣θ), maximizing it to find the most likely value of θ.<br>
+In MAP, the parameter θ is treated as a random variable with its own probability distribution P(θ). This allows us to incorporate prior knowledge or beliefs about θ via P(θ). MAP then maximizes the posterior probability, P(θ∣X), which combines the likelihood P(X∣θ) with the prior P(θ).<br><br>
+
+  <table border="1">
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>MLE</th>
+      <th>MAP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Definition</strong></td>
+      <td>Maximizes the likelihood P(X∣θ).</td>
+      <td>Maximizes the posterior P(θ|X).</td>
+    </tr>
+    <tr>
+      <td><strong>Formula</strong></td>
+      <td>θ<sub>MLE</sub>=argmax (P(X∣θ))</td>
+      <td>θ<sub>MAP</sub>=argmax (P(X∣θ).P(θ))</td>
+    </tr>
+  </tbody>
+</table>
+</li><br>
 </ul>
