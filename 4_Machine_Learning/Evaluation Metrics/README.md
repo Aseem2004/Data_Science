@@ -102,8 +102,15 @@ Range: −1 to 1, where 1 indicates well-separated clusters and −1 suggests po
   Range: −1 (poor match) to 1 (perfect match).</li>
 
   <li><h3><b>Homogeneity, Completeness, V-Measure</b></h3>
-  Homogeneity: All points in a cluster belong to the same class.<br>
-Completeness: All points of a class are assigned to the same cluster.<br>
-  V-Measure: Harmonic mean of homogeneity and completeness.</li>
-  
+      <ul>
+  <li>Homogeneity (0-1): All points in a cluster belong to the same class. A Homogeneity score of 1 means that each cluster contains only members of a single class (perfectly homogeneous clustering). A Homogeneity score of 0 means that the clusters do not respect the true class labels at all (completely impure clusters).<br></li>
+      
+<li>Completeness(0-1): All points of a class are assigned to the same cluster. A Completeness score of 1 means that all data points of a true class are assigned to the same cluster. A Completeness score of 0 means that the true class is scattered across different clusters (complete disintegration).<br></li>
+
+<li>V-Measure(0-1): Harmonic mean of homogeneity and completeness. A V-Measure score of 1 indicates perfect clustering (high Homogeneity and high Completeness).
+A V-Measure score of 0 indicates poor clustering, where neither Homogeneity nor Completeness is satisfied.</li></li>
+</ul>
+  <li><h3><b>Inertia</b></h3>
+It measures how tightly the points in a cluster are grouped around the center (centroid). Inertia is the sum of squared distances between each point and the centroid of the cluster to which it belongs. The lower the inertia, the better the clustering, because it indicates that points are closer to their respective centroids.<br>
+  In ideal case, inertia = 0.</li>  
 </ul>
