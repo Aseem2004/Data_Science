@@ -80,6 +80,69 @@ Steps in DBSCAN:<br>
 </li>
 </ol>
 
+Comparions between various Clustering Algorithms:<br>
+
+  <table>
+        <thead>
+            <tr>
+                <th>Aspect</th>
+                <th>KMeans</th>
+                <th>Hierarchical</th>
+                <th>DBSCAN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Definition</td>
+                <td>Partitional clustering algorithm that minimizes the distance of points to their cluster centroids.</td>
+                <td>Clustering algorithm that creates a hierarchy of clusters using distance measures.</td>
+                <td>Density-based clustering that identifies core, border, and noise points.</td>
+            </tr>
+            <tr>
+                <td>Type</td>
+                <td>Partitional</td>
+                <td>Hierarchical (Agglomerative or Divisive)</td>
+                <td>Density-Based</td>
+            </tr>
+            <tr>
+                <td>Data Assumptions</td>
+                <td>Assumes spherical clusters and equal variances.</td>
+                <td>Can handle clusters of various shapes (depending on the linkage method).</td>
+                <td>Handles arbitrary-shaped clusters.</td>
+            </tr>
+            <tr>
+                <td>Parameters</td>
+                <td>Number of clusters (k).</td>
+                <td>Linkage method (single, complete, ward).</td>
+                <td>Minimum samples (min_samples), distance threshold (eps).</td>
+            </tr>
+            <tr>
+                <td>Scalability</td>
+                <td>Highly scalable for large datasets.</td>
+                <td>Less scalable, computationally intensive for large datasets.</td>
+                <td>Efficient for small to medium datasets.</td>
+            </tr>
+            <tr>
+                <td>Handling Outliers</td>
+                <td>Sensitive to outliers, as centroids can be pulled by them.</td>
+                <td>May group outliers into clusters depending on distance linkage.</td>
+                <td>Effectively identifies outliers as noise.</td>
+            </tr>
+            <tr>
+                <td>Cluster Shape</td>
+                <td>Works best for spherical clusters.</td>
+                <td>Can adapt to cluster shape based on linkage.</td>
+                <td>Handles arbitrary cluster shapes well.</td>
+            </tr>
+            <tr>
+                <td>Initial Centroids</td>
+                <td>Requires initial centroid selection, sensitive to initialization.</td>
+                <td>No centroids involved.</td>
+                <td>No centroids involved.</td>
+            </tr>
+        </tbody>
+    </table>
+
 <h3><b>When to Use Clustering</b></h3>
 <ul>
 <li>When you have unlabeled data.</li>
@@ -94,4 +157,60 @@ Steps in DBSCAN:<br>
 <li>Anomaly Detection: Identify unusual patterns in data.</li>
 </ul>
 
+<h2><b>Note</b></h2>
+Comparison of features between make_moons, make_blobs and make_classification:<br><br>
 
+  <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>make_moons</th>
+                <th>make_blobs</th>
+                <th>make_classification</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Purpose</td>
+                <td>Generate crescent-shaped, non-linear datasets</td>
+                <td>Generate isotropic Gaussian blobs for clustering</td>
+                <td>Generate synthetic datasets for classification problems</td>
+            </tr>
+            <tr>
+                <td>Clusters/Classes</td>
+                <td>Always produces two interleaving moon-shaped clusters</td>
+                <td>Produces a specified number of Gaussian clusters</td>
+                <td>Produces samples belonging to a specified number of classes</td>
+            </tr>
+            <tr>
+                <td>Linear Separability</td>
+                <td>Not linearly separable</td>
+                <td>Often linearly separable, depending on parameters</td>
+                <td>Can create linearly or non-linearly separable data</td>
+            </tr>
+            <tr>
+                <td>Parameters</td>
+                <td>n_samples, noise, random_state</td>
+                <td>n_samples, centers, cluster_std, random_state</td>
+                <td>n_samples, n_features, n_informative, n_classes, etc.</td>
+            </tr>
+            <tr>
+                <td>Use Case</td>
+                <td>Testing non-linear classification algorithms</td>
+                <td>Benchmarking clustering algorithms</td>
+                <td>Benchmarking classification algorithms</td>
+            </tr>
+          <tr>
+            <td>x shape</td>
+            <td>(n_samples,2)</td>
+            <td>(n_samples, n_features)</td>
+            <td>(n_samples, n_features)</td>
+          </tr>
+          <tr>
+            <td>y shape</td>
+            <td>(n_samples,)</td>
+            <td>(n_samples,)</td>
+            <td>(n_samples,)</td>
+          </tr>
+        </tbody>
+  </table>
