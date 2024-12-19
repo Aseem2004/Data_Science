@@ -180,6 +180,46 @@ We find suitable parameters for the hyperplane and can plot the hyperplane to di
 <li>Outlier Detection: Anomaly detection in fraud detection and intrusion systems.</li>
 </ul>
 
+<h3><b>Support Vector Classifier (SVC)</b></h3>
+SVC is a supervised machine learning algorithm based on Support Vector Machines (SVM). It is widely used for binary classification and can be extended for multiclass classification using specific strategies.
+
+<ul>
+<li><h4><b>Binary Classification with SVC</b></h4> 
+In binary classification, SVC separates data into two classes using a hyperplane in the feature space. It attempts to find the optimal hyperplane that maximizes the margin between the two classes.<br><br>
+
+Equation of the hyperplane: w⋅x+b=0<br><br>
+Decision boundaries:<br>
+w⋅x+b=+1 (support vectors for class 1)<br>
+w⋅x+b=−1 (support vectors for class 2)<br>
+
+Steps
+<ul>
+<li>Compute support vectors that are closest to the decision boundary.</li>
+<li>Find the hyperplane that maximizes the margin while ensuring correct classification of all training points.</li>
+</ul>
+<br>
+
+Key Features
+<ul>
+<li>Works well for linearly separable data.</li>
+<li>Can handle non-linear data using kernel functions (e.g., polynomial, RBF).</li>
+</ul>
+</li>
+<br>
+
+<li><h4><b>Multiclass Classification with SVC</b></h4>
+SVM inherently supports only binary classification. For multiclass classification, SVC uses strategies like One-vs-One (OvO) or One-vs-Rest (OvR) to extend its capability.<br>
+
+<b>One-vs-One (OvO) Strategy:</b> SVC in scikit-learn handles multi-class classification by default using the one-vs-one (OvO) approach.<br>
+OvO creates a binary classifier for every pair of classes. For n_classes, there are <sup>n</sup>C<sub>2</sub> classifiers trained.<br>
+The final prediction is made by voting: the class that wins the most pairwise comparisons is assigned as the prediction.<br>
+
+<b>One-vs-Rest (OvR) Strategy:</b> Trains n classifiers, one for each class versus the rest of the classes combined.<br>
+Chooses the class with the highest confidence score. Faster than OvO for larger datasets.
+
+<h2><b>Note:</b></h2> Decision Boundaries in Multi-Class: In multi-class datasets, SVC creates boundaries that separate each class from the others. These boundaries may be linear (for kernel='linear') or non-linear (for kernel='rbf' or poly).
 
 
+</li>
+</ul>
 
